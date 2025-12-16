@@ -1,0 +1,35 @@
+{
+  "app": {
+    "title": "Date Palm Disease Detector",
+    "description": "Capture or upload a photo of a date palm leaf for instant diagnosis",
+    "analysisResults": "Analysis Results",
+    "topPrediction": "Top Prediction",
+    "allPossibilities": "All Possibilities",
+    "confidence": "Confidence",
+    "analyzeAnother": "Analyze Another Leaf",
+    "loadingModel": "Loading disease detection model...",
+    "capturePhoto": "🌿 Capture Leaf Photo",
+    "chooseFile": "Choose File",
+    "camera": "Camera",
+    "upload": "Upload",
+    "selectPhoto": "Click to select a leaf photo"
+  },
+  "diseases": {
+    "healthy": "Healthy sample",
+    "potassiumDeficiency": "Potassium Deficiency",
+    "manganeseDeficiency": "Manganese Deficiency",
+    "magnesiumDeficiency": "Magnesium Deficiency",
+    "blackScorch": "Black Scorch",
+    "leafSpots": "Leaf Spots",
+    "fusariumWilt": "Fusarium Wilt",
+    "rachisBlight": "Rachis Blight",
+    "parlatoriaBlanchardi": "Parlatoria Blanchardi"
+  },
+  "messages": {
+    "modelReady": "✅ Disease detection model is loaded and ready. <1>Current accuracy: ~70%</1>",
+    "modelLoading": "⏳ Loading model... Please wait.",
+    "noImage": "No image selected yet",
+    "processing": "Analyzing leaf image...",
+    "ready": "Capture or upload a photo to begin diagnosis"
+  }
+}
