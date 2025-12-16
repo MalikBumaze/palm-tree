@@ -107,15 +107,15 @@ export default function Home() {
   useEffect(() => {
     const loadModel = async () => {
       setLoading(true);
-      try {
-        const loadedModel = await tf.loadGraphModel('/model/model.json');
-        setModel(loadedModel);
-        console.log('✅ تم تشغيل النظام بنجاح');
-      } catch (error) {
-        console.error('❌ فشل في تشغيل النظام', error);
-      }
-      setLoading(false);
-    };
+    try {
+    const loadedModel = await tf.loadGraphModel('/model/model.json');
+    // Cast to any then to LayersModel (not recommended unless you're certain)
+    setModel(loadedModel as unknown as tf.LayersModel);
+    console.log('✅ تم تشغيل النظام بنجاح');
+  } catch (error) {
+    console.error('❌ فشل في تشغيل النظام', error);
+  }
+};
     loadModel();
   }, []);
 
